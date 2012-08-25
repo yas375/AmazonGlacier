@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AmazonGlacier' target in the 'AmazonGlacier' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

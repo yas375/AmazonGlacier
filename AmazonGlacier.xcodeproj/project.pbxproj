@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50D9DF3E15E8F8A0008B6D90 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D9DF3D15E8F8A0008B6D90 /* Cocoa.framework */; };
+		50D9DF4815E8F8A0008B6D90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50D9DF4615E8F8A0008B6D90 /* InfoPlist.strings */; };
+		50D9DF4A15E8F8A0008B6D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D9DF4915E8F8A0008B6D90 /* main.m */; };
+		50D9DF4E15E8F8A0008B6D90 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 50D9DF4C15E8F8A0008B6D90 /* Credits.rtf */; };
+		50D9DF5115E8F8A0008B6D90 /* AGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D9DF5015E8F8A0008B6D90 /* AGAppDelegate.m */; };
+		50D9DF5415E8F8A1008B6D90 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D9DF5215E8F8A1008B6D90 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50D9DF3915E8F8A0008B6D90 /* AmazonGlacier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonGlacier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D9DF3D15E8F8A0008B6D90 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		50D9DF4015E8F8A0008B6D90 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		50D9DF4115E8F8A0008B6D90 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		50D9DF4215E8F8A0008B6D90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		50D9DF4515E8F8A0008B6D90 /* AmazonGlacier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmazonGlacier-Info.plist"; sourceTree = "<group>"; };
+		50D9DF4715E8F8A0008B6D90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50D9DF4915E8F8A0008B6D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50D9DF4B15E8F8A0008B6D90 /* AmazonGlacier-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmazonGlacier-Prefix.pch"; sourceTree = "<group>"; };
+		50D9DF4D15E8F8A0008B6D90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		50D9DF4F15E8F8A0008B6D90 /* AGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGAppDelegate.h; sourceTree = "<group>"; };
+		50D9DF5015E8F8A0008B6D90 /* AGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGAppDelegate.m; sourceTree = "<group>"; };
+		50D9DF5315E8F8A1008B6D90 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50D9DF3615E8F8A0008B6D90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D9DF3E15E8F8A0008B6D90 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50D9DF2E15E8F8A0008B6D90 = {
+			isa = PBXGroup;
+			children = (
+				50D9DF4315E8F8A0008B6D90 /* AmazonGlacier */,
+				50D9DF3C15E8F8A0008B6D90 /* Frameworks */,
+				50D9DF3A15E8F8A0008B6D90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50D9DF3A15E8F8A0008B6D90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D9DF3915E8F8A0008B6D90 /* AmazonGlacier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50D9DF3C15E8F8A0008B6D90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50D9DF3D15E8F8A0008B6D90 /* Cocoa.framework */,
+				50D9DF3F15E8F8A0008B6D90 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50D9DF3F15E8F8A0008B6D90 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50D9DF4015E8F8A0008B6D90 /* AppKit.framework */,
+				50D9DF4115E8F8A0008B6D90 /* CoreData.framework */,
+				50D9DF4215E8F8A0008B6D90 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		50D9DF4315E8F8A0008B6D90 /* AmazonGlacier */ = {
+			isa = PBXGroup;
+			children = (
+				50D9DF4F15E8F8A0008B6D90 /* AGAppDelegate.h */,
+				50D9DF5015E8F8A0008B6D90 /* AGAppDelegate.m */,
+				50D9DF5215E8F8A1008B6D90 /* MainMenu.xib */,
+				50D9DF4415E8F8A0008B6D90 /* Supporting Files */,
+			);
+			path = AmazonGlacier;
+			sourceTree = "<group>";
+		};
+		50D9DF4415E8F8A0008B6D90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50D9DF4515E8F8A0008B6D90 /* AmazonGlacier-Info.plist */,
+				50D9DF4615E8F8A0008B6D90 /* InfoPlist.strings */,
+				50D9DF4915E8F8A0008B6D90 /* main.m */,
+				50D9DF4B15E8F8A0008B6D90 /* AmazonGlacier-Prefix.pch */,
+				50D9DF4C15E8F8A0008B6D90 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50D9DF3815E8F8A0008B6D90 /* AmazonGlacier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D9DF5715E8F8A1008B6D90 /* Build configuration list for PBXNativeTarget "AmazonGlacier" */;
+			buildPhases = (
+				50D9DF3515E8F8A0008B6D90 /* Sources */,
+				50D9DF3615E8F8A0008B6D90 /* Frameworks */,
+				50D9DF3715E8F8A0008B6D90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmazonGlacier;
+			productName = AmazonGlacier;
+			productReference = 50D9DF3915E8F8A0008B6D90 /* AmazonGlacier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50D9DF3015E8F8A0008B6D90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AG;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Open Source Community";
+			};
+			buildConfigurationList = 50D9DF3315E8F8A0008B6D90 /* Build configuration list for PBXProject "AmazonGlacier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50D9DF2E15E8F8A0008B6D90;
+			productRefGroup = 50D9DF3A15E8F8A0008B6D90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50D9DF3815E8F8A0008B6D90 /* AmazonGlacier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50D9DF3715E8F8A0008B6D90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D9DF4815E8F8A0008B6D90 /* InfoPlist.strings in Resources */,
+				50D9DF4E15E8F8A0008B6D90 /* Credits.rtf in Resources */,
+				50D9DF5415E8F8A1008B6D90 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50D9DF3515E8F8A0008B6D90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D9DF4A15E8F8A0008B6D90 /* main.m in Sources */,
+				50D9DF5115E8F8A0008B6D90 /* AGAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50D9DF4615E8F8A0008B6D90 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50D9DF4715E8F8A0008B6D90 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		50D9DF4C15E8F8A0008B6D90 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50D9DF4D15E8F8A0008B6D90 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		50D9DF5215E8F8A1008B6D90 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50D9DF5315E8F8A1008B6D90 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50D9DF5515E8F8A1008B6D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		50D9DF5615E8F8A1008B6D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		50D9DF5815E8F8A1008B6D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmazonGlacier/AmazonGlacier-Prefix.pch";
+				INFOPLIST_FILE = "AmazonGlacier/AmazonGlacier-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		50D9DF5915E8F8A1008B6D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmazonGlacier/AmazonGlacier-Prefix.pch";
+				INFOPLIST_FILE = "AmazonGlacier/AmazonGlacier-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50D9DF3315E8F8A0008B6D90 /* Build configuration list for PBXProject "AmazonGlacier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D9DF5515E8F8A1008B6D90 /* Debug */,
+				50D9DF5615E8F8A1008B6D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D9DF5715E8F8A1008B6D90 /* Build configuration list for PBXNativeTarget "AmazonGlacier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D9DF5815E8F8A1008B6D90 /* Debug */,
+				50D9DF5915E8F8A1008B6D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50D9DF3015E8F8A0008B6D90 /* Project object */;
+}
