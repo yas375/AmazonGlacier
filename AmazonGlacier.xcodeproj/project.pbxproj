@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		502036A715EAC17A00A6FB84 /* AmazonAuthUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 502036A315EAC17A00A6FB84 /* AmazonAuthUtils.m */; };
 		502036A815EAC17A00A6FB84 /* AGGlacierEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 502036A615EAC17A00A6FB84 /* AGGlacierEngine.m */; };
-		502036AC15EAC35A00A6FB84 /* AmazonSDKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 502036AB15EAC35A00A6FB84 /* AmazonSDKUtil.m */; };
-		502036B015EAC3F700A6FB84 /* AmazonCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 502036AF15EAC3F700A6FB84 /* AmazonCredentials.m */; };
+		502036B215EAD65900A6FB84 /* libcommonCrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 502036B115EAD65900A6FB84 /* libcommonCrypto.dylib */; };
+		5074154315EBB733001492BA /* AGCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074154215EBB733001492BA /* AGCredentials.m */; };
 		50D9DF3E15E8F8A0008B6D90 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D9DF3D15E8F8A0008B6D90 /* Cocoa.framework */; };
 		50D9DF4815E8F8A0008B6D90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50D9DF4615E8F8A0008B6D90 /* InfoPlist.strings */; };
 		50D9DF4A15E8F8A0008B6D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D9DF4915E8F8A0008B6D90 /* main.m */; };
@@ -22,14 +21,11 @@
 
 /* Begin PBXFileReference section */
 		41B5BAD970FC4EC5A1030F04 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		502036A215EAC17A00A6FB84 /* AmazonAuthUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonAuthUtils.h; sourceTree = "<group>"; };
-		502036A315EAC17A00A6FB84 /* AmazonAuthUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonAuthUtils.m; sourceTree = "<group>"; };
 		502036A515EAC17A00A6FB84 /* AGGlacierEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGlacierEngine.h; sourceTree = "<group>"; };
 		502036A615EAC17A00A6FB84 /* AGGlacierEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGGlacierEngine.m; sourceTree = "<group>"; };
-		502036AA15EAC35A00A6FB84 /* AmazonSDKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonSDKUtil.h; sourceTree = "<group>"; };
-		502036AB15EAC35A00A6FB84 /* AmazonSDKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonSDKUtil.m; sourceTree = "<group>"; };
-		502036AE15EAC3F700A6FB84 /* AmazonCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonCredentials.h; sourceTree = "<group>"; };
-		502036AF15EAC3F700A6FB84 /* AmazonCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonCredentials.m; sourceTree = "<group>"; };
+		502036B115EAD65900A6FB84 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		5074154115EBB733001492BA /* AGCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCredentials.h; sourceTree = "<group>"; };
+		5074154215EBB733001492BA /* AGCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCredentials.m; sourceTree = "<group>"; };
 		50D9DF3915E8F8A0008B6D90 /* AmazonGlacier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonGlacier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D9DF3D15E8F8A0008B6D90 /* Cocoa.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		50D9DF4015E8F8A0008B6D90 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -51,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502036B215EAD65900A6FB84 /* libcommonCrypto.dylib in Frameworks */,
 				50D9DF3E15E8F8A0008B6D90 /* Cocoa.framework in Frameworks */,
 				9EDFA385AEC14BF5AFC2B934 /* libPods.a in Frameworks */,
 			);
@@ -62,21 +59,9 @@
 		502036A015EAC17A00A6FB84 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				502036A115EAC17A00A6FB84 /* AmazonAuthUtils */,
-				502036AD15EAC3F700A6FB84 /* AmazonCredentials */,
-				502036A915EAC35A00A6FB84 /* AmazonSDKUtil */,
 				502036A415EAC17A00A6FB84 /* GlacierEngine */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		502036A115EAC17A00A6FB84 /* AmazonAuthUtils */ = {
-			isa = PBXGroup;
-			children = (
-				502036A215EAC17A00A6FB84 /* AmazonAuthUtils.h */,
-				502036A315EAC17A00A6FB84 /* AmazonAuthUtils.m */,
-			);
-			path = AmazonAuthUtils;
 			sourceTree = "<group>";
 		};
 		502036A415EAC17A00A6FB84 /* GlacierEngine */ = {
@@ -86,24 +71,6 @@
 				502036A615EAC17A00A6FB84 /* AGGlacierEngine.m */,
 			);
 			path = GlacierEngine;
-			sourceTree = "<group>";
-		};
-		502036A915EAC35A00A6FB84 /* AmazonSDKUtil */ = {
-			isa = PBXGroup;
-			children = (
-				502036AA15EAC35A00A6FB84 /* AmazonSDKUtil.h */,
-				502036AB15EAC35A00A6FB84 /* AmazonSDKUtil.m */,
-			);
-			path = AmazonSDKUtil;
-			sourceTree = "<group>";
-		};
-		502036AD15EAC3F700A6FB84 /* AmazonCredentials */ = {
-			isa = PBXGroup;
-			children = (
-				502036AE15EAC3F700A6FB84 /* AmazonCredentials.h */,
-				502036AF15EAC3F700A6FB84 /* AmazonCredentials.m */,
-			);
-			path = AmazonCredentials;
 			sourceTree = "<group>";
 		};
 		50D9DF2E15E8F8A0008B6D90 = {
@@ -128,8 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				50D9DF3D15E8F8A0008B6D90 /* Cocoa.framework */,
-				50D9DF3F15E8F8A0008B6D90 /* Other Frameworks */,
+				502036B115EAD65900A6FB84 /* libcommonCrypto.dylib */,
 				E591293B34984E38AC4BC145 /* libPods.a */,
+				50D9DF3F15E8F8A0008B6D90 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,6 +120,8 @@
 				50D9DF5015E8F8A0008B6D90 /* AGAppDelegate.m */,
 				50D9DF5215E8F8A1008B6D90 /* MainMenu.xib */,
 				50D9DF4415E8F8A0008B6D90 /* Supporting Files */,
+				5074154115EBB733001492BA /* AGCredentials.h */,
+				5074154215EBB733001492BA /* AGCredentials.m */,
 			);
 			path = AmazonGlacier;
 			sourceTree = "<group>";
@@ -253,10 +223,8 @@
 			files = (
 				50D9DF4A15E8F8A0008B6D90 /* main.m in Sources */,
 				50D9DF5115E8F8A0008B6D90 /* AGAppDelegate.m in Sources */,
-				502036A715EAC17A00A6FB84 /* AmazonAuthUtils.m in Sources */,
 				502036A815EAC17A00A6FB84 /* AGGlacierEngine.m in Sources */,
-				502036AC15EAC35A00A6FB84 /* AmazonSDKUtil.m in Sources */,
-				502036B015EAC3F700A6FB84 /* AmazonCredentials.m in Sources */,
+				5074154315EBB733001492BA /* AGCredentials.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +315,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AmazonGlacier/AmazonGlacier-Prefix.pch";
 				INFOPLIST_FILE = "AmazonGlacier/AmazonGlacier-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -360,6 +332,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AmazonGlacier/AmazonGlacier-Prefix.pch";
 				INFOPLIST_FILE = "AmazonGlacier/AmazonGlacier-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

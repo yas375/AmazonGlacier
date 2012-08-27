@@ -7,8 +7,8 @@
 //
 
 #import "AGAppDelegate.h"
-
 #import "AGGlacierEngine.h"
+#import "AGCredentials.h"
 
 @interface AGAppDelegate ()
 @property (nonatomic, strong) AGGlacierEngine *engine;
@@ -18,9 +18,10 @@
 @implementation AGAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    NSDictionary *headers = @{ @"x-amz-glacier-version" : @"2012-06-01" };
-    self.engine = [[AGGlacierEngine alloc] initWithHostName:@"glacier.us-east-1.amazonaws.com"
-                                         customHeaderFields:headers];
+    self.engine = [[AGGlacierEngine alloc] initWithRegion:@"us-east-1"
+                                                accountID:kAmazonAccountID
+                                                accessKey:kAmazonAccessKey
+                                                secretKey:kAmazonSecretKey];
     [self.engine listOfVaultsWithLimit:30
                                 marker:nil
                           onCompletion:^(NSDictionary *items, NSString *marker) {
