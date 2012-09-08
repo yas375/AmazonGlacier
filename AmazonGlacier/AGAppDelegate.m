@@ -8,28 +8,20 @@
 
 #import "AGAppDelegate.h"
 #import "AGGlacierEngine.h"
-#import "AGCredentials.h"
+#import "AGMasterViewController.h"
 
 @interface AGAppDelegate ()
+@property (nonatomic,strong) IBOutlet AGMasterViewController *masterViewController;
 @property (nonatomic, strong) AGGlacierEngine *engine;
-
 @end
 
 @implementation AGAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    self.engine = [[AGGlacierEngine alloc] initWithRegion:@"us-east-1"
-                                                accountID:kAmazonAccountID
-                                                accessKey:kAmazonAccessKey
-                                                secretKey:kAmazonSecretKey];
-    [self.engine listOfVaultsWithLimit:30
-                                marker:nil
-                          onCompletion:^(NSDictionary *items, NSString *marker) {
-                              NSLog(@"ARRRR!!");
-                          } onError:^(NSError *error) {
-                              NSLog(@"Error: %@", error);
-                          }];
-    
+    self.masterViewController = [[AGMasterViewController alloc] initWithNibName:@"AGMasterViewController"
+                                                                         bundle:nil];
+    [self.window.contentView addSubview:self.masterViewController.view];
+    self.masterViewController.view.frame = [(NSView *)self.window.contentView bounds];
 }
 
 @end

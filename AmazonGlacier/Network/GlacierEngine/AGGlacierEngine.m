@@ -7,6 +7,7 @@
 //
 
 #import "AGGlacierEngine.h"
+#import "AGCredentials.h"
 
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonHMAC.h>
@@ -26,6 +27,18 @@
 
 @implementation AGGlacierEngine
 
++ (id)sharedEngine {
+    static dispatch_once_t pred = 0;
+    __strong static id _sharedObject = nil;
+    dispatch_once(&pred, ^{
+        _sharedObject = [[self alloc] initWithRegion:@"us-east-1"
+                                           accountID:kAmazonAccountID
+                                           accessKey:kAmazonAccessKey
+                                           secretKey:kAmazonSecretKey];
+    });
+    return _sharedObject;
+}
+
 - (id)initWithRegion:(NSString *)region
            accountID:(NSString *)accountID
            accessKey:(NSString *)accessKey
@@ -42,6 +55,8 @@
     return self;
 }
 
+#pragma mark - Requests
+
 - (MKNetworkOperation *)listOfVaultsWithLimit:(NSUInteger)limit
                                        marker:(NSString *)marker
                                  onCompletion:(VaultsResponseBlock)completionBlock
@@ -54,7 +69,6 @@
                                               params:params];
     [op onCompletion:^(MKNetworkOperation *completedOperation) {
         id json = [completedOperation responseJSON];
-        DLog(@"List of vaults: \n%@", json);
         completionBlock([json objectForKey:@"VaultList"], [json objectForKey:@"marker"]);
     } onError:errorBlock];
     [self signOperation:op];

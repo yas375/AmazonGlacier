@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501C254D15FA7964000DD8D2 /* AGMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C254B15FA7964000DD8D2 /* AGMasterViewController.m */; };
+		501C254E15FA7964000DD8D2 /* AGMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 501C254C15FA7964000DD8D2 /* AGMasterViewController.xib */; };
 		502036A815EAC17A00A6FB84 /* AGGlacierEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 502036A615EAC17A00A6FB84 /* AGGlacierEngine.m */; };
 		502036B215EAD65900A6FB84 /* libcommonCrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 502036B115EAD65900A6FB84 /* libcommonCrypto.dylib */; };
 		5074154315EBB733001492BA /* AGCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 5074154215EBB733001492BA /* AGCredentials.m */; };
@@ -21,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		41B5BAD970FC4EC5A1030F04 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		501C254A15FA7964000DD8D2 /* AGMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGMasterViewController.h; sourceTree = "<group>"; };
+		501C254B15FA7964000DD8D2 /* AGMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGMasterViewController.m; sourceTree = "<group>"; };
+		501C254C15FA7964000DD8D2 /* AGMasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGMasterViewController.xib; sourceTree = "<group>"; };
 		502036A515EAC17A00A6FB84 /* AGGlacierEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGlacierEngine.h; sourceTree = "<group>"; };
 		502036A615EAC17A00A6FB84 /* AGGlacierEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGGlacierEngine.m; sourceTree = "<group>"; };
 		502036B115EAD65900A6FB84 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
@@ -56,6 +61,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		501C254515FA78C9000DD8D2 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				501C254615FA7917000DD8D2 /* Master */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		501C254615FA7917000DD8D2 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				501C254A15FA7964000DD8D2 /* AGMasterViewController.h */,
+				501C254B15FA7964000DD8D2 /* AGMasterViewController.m */,
+				501C254C15FA7964000DD8D2 /* AGMasterViewController.xib */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
 		502036A015EAC17A00A6FB84 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +138,7 @@
 		50D9DF4315E8F8A0008B6D90 /* AmazonGlacier */ = {
 			isa = PBXGroup;
 			children = (
+				501C254515FA78C9000DD8D2 /* GUI */,
 				502036A015EAC17A00A6FB84 /* Network */,
 				50D9DF4F15E8F8A0008B6D90 /* AGAppDelegate.h */,
 				50D9DF5015E8F8A0008B6D90 /* AGAppDelegate.m */,
@@ -194,6 +218,7 @@
 				50D9DF4815E8F8A0008B6D90 /* InfoPlist.strings in Resources */,
 				50D9DF4E15E8F8A0008B6D90 /* Credits.rtf in Resources */,
 				50D9DF5415E8F8A1008B6D90 /* MainMenu.xib in Resources */,
+				501C254E15FA7964000DD8D2 /* AGMasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +250,7 @@
 				50D9DF5115E8F8A0008B6D90 /* AGAppDelegate.m in Sources */,
 				502036A815EAC17A00A6FB84 /* AGGlacierEngine.m in Sources */,
 				5074154315EBB733001492BA /* AGCredentials.m in Sources */,
+				501C254D15FA7964000DD8D2 /* AGMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
